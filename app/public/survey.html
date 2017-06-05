@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FriendZone Survey</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+
+<style>
+#subtitle, #surveys, .barrio {font-family: Barrio}
+.jumbotron, .panel-default>.panel-heading {background-color: #563d7c; color: #cdbfe3}
+ #imgMatch {width: 250px; height: 200px}
+</style>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center"><span class="glyphicon glyphicon-th-list"></span>FriendZone Survey</h1>
+      <hr>
+      <h3 class="text-center" id="subtitle">MY LIKES AND PETPEEVES</h3>
+      <br>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+
+        <!-- Reservation Page -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title" id="surveys">Survey</h4>
+          </div>
+          <div class="panel-body">
+
+            <form role="form">
+
+              <div class="form-group">
+                <label for="friend-name">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+
+              <div class="form-group">
+                <label for="friend-photo">Link to Photo</label>
+                <input type="text" class="form-control" id="photo">
+              </div>
+            </hr>
+
+            <h4 class="barrio">Question 1</h4>
+            <h5><strong>I'm a fan of nerdy shit<strong></h5>
+            <select data-placeholder="" class"chosen-select" id="q1">
+            <option value="">Select an option</option>
+            <option value="1">1 (no I'm a dbag)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (super nerd)</option>
+            </select>
+            <hr>
+            <h4 class="barrio">Question 2</h4>
+            <h5><strong>Sundays are for the NFL<strong></h5>
+            <select data-placeholder="" class"chosen-select" id="q2">
+            <option value="">Select an option</option>
+            <option value="1">1 (National Forensic Lab?)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (NFL Season is the best time of year)</option>
+            </select>
+            <hr>
+            <h4 class="barrio">Question 3</h4>
+            <h5><strong>I dress up for ComicCon<strong></h5>
+            <select data-placeholder="" class"chosen-select" id="q3">
+            <option value="">Select an option</option>
+            <option value="1">1 (That's weird)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (I've even been to the furry convention)</option>
+            </select>
+            <hr>
+            <h4 class="barrio">Question 4</h4>
+            <h5><strong>I'm a coffee snob<strong></h5>
+            <select data-placeholder="" class"chosen-select" id="q4">
+            <option value="">Select an option</option>
+            <option value="1">1 (Gas Station Coffee is Fine by Me)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (I'm friends with my Barista)</option>
+            </select>
+            <hr>
+            <h4 class="barrio">Question 5</h4>
+            <h5><strong>I'm into tofu and vegeterian dishes<strong></h5>
+            <select data-placeholder="" class"chosen-select" id="q5">
+            <option value="">Select an option</option>
+            <option value="1">1 (Give me my steak bloody)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (Yes and I wear skinny jeans)</option>
+            </select>
+            <hr>
+            <h4 class="barrio">Question 6</h4>
+            <h5><strong>I enjoy craft beer<strong></h5>
+            <select data-placeholder="" class"chosen-select" id="q6">
+            <option value="">Select an option</option>
+            <option value="1">1 (No just give me a bud light)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (You can always find me at the local brewery)</option>
+            </select>
+            <hr>
+            <h4 class="barrio">Question 7</h4>
+            <h5><strong>I love Houston<strong></h5>
+            <select data-placeholder="" class"chosen-select" id="q7">
+            <option value="">Select an option</option>
+            <option value="1">1 (Haha is this a joke?! I just work here!)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (Born and Raised)</option>
+            </select>
+            <hr>
+            <h4 class="barrio">Question 8</h4>
+            <h5><strong>Baseball is a spectator sport<strong></h5>
+            <select data-placeholder="" class"chosen-select" id="q8">
+            <option value="">Select an option</option>
+            <option value="1">1 (No, 9 innings of baseball puts anyone to sleep)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (Take me out to the ballgame)</option>
+            </select>
+            <hr>
+            <h4 class="barrio">Question 9</h4>
+            <h5><strong>I enjoy talking about my high school sports days<strong></h5>
+            <select data-placeholder="" class"chosen-select" id="q9">
+            <option value="">Select an option</option>
+            <option value="1">1 (Not at my age...)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (The Glory Years!)</option>
+            </select>
+            <hr>
+            <h4 class="barrio">Question 10</h4>
+            <h5><strong>Fantasy Sports are Awesome!<strong></h5>
+            <select data-placeholder="" class"chosen-select" id="q10">
+            <option value="">Select an option</option>
+            <option value="1">1 (Too nerdy)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (In about 20 leagues year round)</option>
+            </select>
+            <hr>
+              <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/">Home</a> | <a href="/api/friends">API Friend List</a> | <a href="https://github.com/mattfalcon/friendfinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+<!-- Below is a static modal example (meaning its position and display have been overridden) -->
+	<div id="modalCheck" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+ <!-- Included are the modal header, modal body (required for padding), and modal footer (optional)-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title"><strong>Best Match</strong></h4>
+	      </div>
+	      <div class="modal-body">
+	        <h4 id="nameMatch">Josh Innes</h4>
+	        <img id="imgMatch" src="http://media.philly.com/images/122915-Josh-Innes.jpg" alt="">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+
+</body>
+</html>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
+
+      // Here we grab the form elements
+      var userData = {
+        name: $("#name").val(),
+        photo: $("#photo").val(),
+        scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), 
+        $("#q8").val(), $("#q9").val(), $("#q10").val()] 
+      };
+
+      console.log(userData);
+
+      // This line is the magic. It"s very similar to the standard ajax function we used.
+      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+      // depending on if a tables is available or not.
+
+      $.post("/api/friends", userData,
+        function(data) {
+          // If a table is available... tell user they are booked.
+          if (data) {  
+            // alert("Yay! You are officially matched with: ")
+            $("#nameMatch").text(data.name);
+            $("#imgMatch").attr("src", data.photo);
+            $("#modalCheck").modal('toggle');
+          }
+
+          // If a table is available... tell user they on the waiting list.
+          else {
+            alert("Sorry you are on the wait list");
+          }
+
+          // Clear the form when submitting
+          $("#name").val("");
+          $("#photo").val("");
+          $("#q1").val("");
+          $("#q2").val("");
+          $("#q3").val("");
+          $("#q4").val("");
+          $("#q5").val("");
+          $("#q6").val("");
+          $("#q7").val("");
+          $("#q8").val("");
+          $("#q9").val("");
+          $("#q10").val("");
+
+        });
+
+    });
+
+</script>
