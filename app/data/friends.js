@@ -5,7 +5,7 @@
 // But you could have it be an empty array as well.
 // ===============================================================================
 
-var friends = [
+var friend = [
   {
     name: "Josh Innes",
     photo: "http://media.philly.com/images/122915-Josh-Innes.jpg",
@@ -29,4 +29,4 @@ var friends = [
 ];
 
 // Note how we export the array. This makes it accessible to other files using require.
-module.exports = friends;
+module.exports = friend;
